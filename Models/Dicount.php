@@ -20,7 +20,7 @@ class Prodotto
 
   private function calcolaSconto($sconto)
   {
-    return $this->prezzo - ($this->prezzo * ($sconto / 100));
+    return $this->prezzo - ($this->prezzo * ($sconto / 45));
   }
 }
 

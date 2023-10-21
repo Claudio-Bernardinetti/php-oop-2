@@ -13,7 +13,34 @@
       <?php include __DIR__ . '/Layout/head.php'; ?>
    </header>
    <main>
-      <?php include __DIR__ . '/Models/Dogs-Cats.php'; ?>
+      <?php include __DIR__ . '/Models/Cats.php'; ?>
+      <?php
+      function printCard($product) {
+         $dettagli = '';
+         if ($product instanceof Cibo) {
+             $dettagli = "<p>Tipo: {$product->tipo}</p>";
+         } elseif ($product instanceof Gioco) {
+             $dettagli = "<p>Materiale: {$product->material}</p>";
+         } elseif ($product instanceof Cuccia) {
+             $dettagli = "<p>Dimensione: {$product->dimensione}</p>";
+         }
+     
+         echo "
+         <div class='col-lg-4 col-md-6 col-sm-12 justify-content-center'>
+             <div class='card my-5' style='width: 18rem;'>
+                 <div class='card-body'>
+                     <img src='{$product->immagine}' alt='{$product->nome}' class='card-img-top'>
+                     <div class='card-text'>
+                         <h5 class='card-title'>{$product->nome}</h5>
+                         <p>Descrizione: {$product->descrizione}</p>
+                         <p>Prezzo: €{$product->prezzo}</p>
+                         $dettagli
+                     </div>
+                 </div>
+             </div>
+         </div>";
+     }
+     ?>
       
    </main>
    <footer>
@@ -22,3 +49,18 @@
     
 </body>
 </html>
+
+<style>
+   body {
+      background-color: whitesmoke;
+   }
+
+   .card {
+      cursor: pointer;
+   }
+
+   .card:hover {
+      border: 1px solid green;
+   }
+
+</style>

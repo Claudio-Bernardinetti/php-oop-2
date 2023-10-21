@@ -17,7 +17,7 @@
    </header>
    <main>
       <div class="Home">
-         <div class="text flex-wrap rounded">
+         <div class="text flex-wrap">
             <div>
                <h1 class="text-center">BENVENUTI !</h1>
             </div>
@@ -35,7 +35,7 @@
 
 <style>
 .Home {
-   background-image: url(./img/andrew-s-ouo1hbizWwo-unsplash.jpg);
+   background-image: url(./img/bg-home.jpg);
    background-size: cover;
    background-position: center;
    width: 100%;
