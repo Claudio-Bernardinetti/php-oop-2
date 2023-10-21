@@ -47,7 +47,6 @@
                   <img src="img/image (p-w).svg" alt="">
                 </div>
               </div>
-            
           </div>
           <!-- End Information list -->
       </div>
@@ -77,6 +76,10 @@
 ul {
     list-style-type: none;
     padding-left: 0; 
+}
+
+li {
+  padding: 0.5rem;
 }
 
 li:hover {

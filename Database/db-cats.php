@@ -22,8 +22,8 @@ $catFoodDB = array(
     );
   
 
-    echo "<div class='container'>";
     echo "<h3 class='text-center pt-5'>Cibo per Gatti</h3>";
+    echo "<div class='container'>";
     echo "<div class='row justify-content-center'>";
     foreach ($catFoodDB as $food) {
        printCard($food);
@@ -31,8 +31,8 @@ $catFoodDB = array(
     echo "</div>";
     echo "</div>";
     
-    echo "<div class='container'>";
     echo "<h3 class='text-center p-3'>Giocattoli per Gatti</h3>";
+    echo "<div class='container'>";
     echo "<div class='row justify-content-center'>";
     foreach ($catToyDB as $toy) {
        printCard($toy);
@@ -48,4 +48,5 @@ $catFoodDB = array(
     }
     echo "</div>";
     echo "</div>";
+
 ?>

@@ -26,7 +26,7 @@
          }
      
          echo "
-         <div class='col-lg-4 col-md-6 col-sm-12 justify-content-center'>
+         <div class='col-lg-3 col-md-6 col-sm-12 justify-content-center mx-5'>
              <div class='card my-5' style='width: 18rem;'>
                  <div class='card-body'>
                      <img src='{$product->immagine}' alt='{$product->nome}' class='card-img-top'>
@@ -54,11 +54,9 @@
    body {
       background-color: whitesmoke;
    }
-
    .card {
       cursor: pointer;
    }
-
    .card:hover {
       border: 1px solid green;
    }

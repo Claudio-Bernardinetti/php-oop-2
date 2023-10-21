@@ -4,7 +4,7 @@
 $catFoodDB = array(
     new Cibo("./img/dog-cs.webp", "Cibo Secco", "Cibo secco di alta qualità con proteine", 20 , "secco"),
     new Cibo("./img/dog-cu.webp", "Cibo Umido", "Cibo umido senza cereali", 25, "umido"),
-    new Cibo("./img/dog-snack.webp", "Snack", "Snack salutare per cani ", 10, "snack")
+    new Cibo("./img/dog-snack.webp", "Snack", "Snack salutare per il tuo cani ", 10, "snack")
   );
   
   // Database per i giocattoli per cani
