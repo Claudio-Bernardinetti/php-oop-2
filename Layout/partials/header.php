@@ -14,3 +14,9 @@
     </div>
   </nav>
 </header>
+
+<style>
+  a.text-light:hover {
+    color: black !important;
+}
+</style>

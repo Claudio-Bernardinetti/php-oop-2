@@ -16,8 +16,11 @@
    </header>
    <main>
       <?php include __DIR__ . '/Models/Dogs-Cats.php'; ?>
-      <div>sconti</div>
+      
    </main>
+   <footer>
+      <?php include __DIR__ . '/Layout/foot.php'; ?>
+   </footer>
     
 </body>
 </html>
