@@ -2,6 +2,11 @@
 
 require __DIR__ . '/../Database/db-cats.php';
 
+trait Loggable {
+  public function log($message) {
+      echo $message;
+  }
+}
 trait Namable {
   public $name;
 
@@ -13,11 +18,10 @@ trait Namable {
       return $this->name;
   }
 }
-
 class Prodotto {
-
   //use Loggable, Namable;
-
+  
+  
     public $immagine;
     public $name;
     public $descrizione;
@@ -55,5 +59,8 @@ class Prodotto {
     public function __construct($immagine, $nome, $descrizione, $prezzo, $dimensione) {
       parent::__construct($immagine, $nome, $descrizione, $prezzo);
       $this->dimensione = $dimensione;
+      ini_set('display_errors',1);
+      error_reporting(E_ALL);
   }
 }
+         

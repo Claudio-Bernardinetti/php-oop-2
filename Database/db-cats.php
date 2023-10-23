@@ -1,5 +1,6 @@
 <?php
 
+
 // Database per il cibo per cani
 $catFoodDB = array(
     new Cibo("./img/cat-snack.webp", "Cibo Secco", "Cibo secco di alta qualità con proteine", 20 , "secco"),

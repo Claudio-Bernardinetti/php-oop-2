@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gatti</title>
@@ -9,23 +9,24 @@
     <!-- Bootstrap -->
 </head>
 <body>
-   <header>
-      <?php include __DIR__ . '/Layout/head.php'; ?>
-   </header>
-   <main>
-      <?php include __DIR__ . '/Models/Cats.php'; ?>
-      <?php
-      function printCard($product) {
-         $dettagli = '';
-         if ($product instanceof Cibo) {
-             $dettagli = "<p>Tipo: {$product->tipo}</p>";
-         } elseif ($product instanceof Gioco) {
-             $dettagli = "<p>Materiale: {$product->material}</p>";
-             
-         } elseif ($product instanceof Cuccia) {
-             $dettagli = "<p>Dimensione: {$product->dimensione}</p>";
-         }
-         
+    <header>
+        <?php include __DIR__ . '/Layout/head.php'; ?>
+    </header>
+    <main>
+        <?php include __DIR__ . '/Models/Cats.php'; ?>
+        <?php
+        
+        function printCard($product) {
+            $dettagli = '';
+            if ($product instanceof Cibo) {
+                $dettagli = "<p>Tipo: {$product->tipo}</p>";
+            } elseif ($product instanceof Gioco) {
+                $dettagli = "<p>Materiale: {$product->material}</p>";
+                
+            } elseif ($product instanceof Cuccia) {
+                $dettagli = "<p>Dimensione: {$product->dimensione}</p>";
+            }
+            
      
          echo "
          <div class='col-lg-3 col-md-6 col-sm-12 justify-content-center mx-5'>
@@ -36,14 +37,15 @@
                          <h5 class='card-title'>{$product->nome}</h5>
                          <p>Descrizione: {$product->descrizione}</p>
                          <p>Prezzo: €{$product->prezzo}</p>
+                         
                          $dettagli
                      </div>
                  </div>
              </div>
          </div>";
         }
+        
         ?>
-      
    </main>
    <footer>
       <?php include __DIR__ . '/Layout/foot.php'; ?>
