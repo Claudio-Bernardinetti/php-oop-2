@@ -21,9 +21,11 @@
              $dettagli = "<p>Tipo: {$product->tipo}</p>";
          } elseif ($product instanceof Gioco) {
              $dettagli = "<p>Materiale: {$product->material}</p>";
+             
          } elseif ($product instanceof Cuccia) {
              $dettagli = "<p>Dimensione: {$product->dimensione}</p>";
          }
+         
      
          echo "
          <div class='col-lg-3 col-md-6 col-sm-12 justify-content-center mx-5'>
