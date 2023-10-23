@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/../Database/db-dogs.php';
+
 
 
 class Prodotto {
@@ -43,3 +43,6 @@ class Cuccia extends Prodotto {
     $this->dimensione = $dimensione;
   }
 }
+
+require __DIR__ . '/../Database/db-dogs.php';
+?>
